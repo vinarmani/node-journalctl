@@ -12,6 +12,7 @@ function Journalctl (opts) {
 	if (opts.all) args.push('-a');
 	if (opts.lines) args.push('-n', opts.lines);
 	if (opts.since) args.push('-S', opts.since);
+	if (opts.until) args.push('-U', opts.since);
 	if (opts.identifier) args.push('-t', opts.identifier);
 	if (opts.unit) args.push('-u', opts.unit);
 	if (opts.filter) {
